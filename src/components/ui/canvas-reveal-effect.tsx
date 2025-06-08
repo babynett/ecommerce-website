@@ -3,6 +3,7 @@ import { cn } from "@/lib/utils";
 import { Canvas, useFrame, useThree } from "@react-three/fiber";
 import React, { useMemo, useRef } from "react";
 import * as THREE from "three";
+import { Material } from "three";
 
 export const CanvasRevealEffect = ({
   animationSpeed = 0.4,
@@ -203,7 +204,7 @@ const ShaderMaterial = ({
     }
     lastFrameTime = timestamp;
 
-    const material: any = ref.current.material;
+    const material = ref.current?.material as Material;
     const timeLocation = material.uniforms.u_time;
     timeLocation.value = timestamp;
   });

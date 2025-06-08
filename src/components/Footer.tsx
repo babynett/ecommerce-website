@@ -73,10 +73,13 @@ const Footer = () => {
         </Card>
         {/* below the card */}
         {""}
-        <div className="flex text-lg ">
+        <div className="flex text-lg">
           {footerLinks.map((footerLink) => (
-            <div className="flex-1 flex-col flex py-10 px-5">
-              <HoverCard key={footerLink.name}>
+            <div
+              key={footerLink.name}
+              className="flex-1 flex-col flex py-10 px-5"
+            >
+              <HoverCard>
                 <HoverCardTrigger className="cursor-pointer font-semibold mb-2">
                   {footerLink.name}
                 </HoverCardTrigger>
@@ -84,7 +87,6 @@ const Footer = () => {
                   {footerLink.description.map((line, index) => (
                     <p key={index}>{line}</p>
                   ))}
-                  <p></p>
                 </div>
               </HoverCard>
             </div>
