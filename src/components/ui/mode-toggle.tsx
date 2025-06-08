@@ -6,11 +6,6 @@ import { ToggleGroup, ToggleGroupItem } from "@radix-ui/react-toggle-group";
 
 export function ModeToggle() {
   const [isDarkMode, setIsDarkMode] = React.useState(false);
-  const toggleTheme = () => {
-    const root = document.documentElement;
-    root.classList.toggle("dark");
-    setIsDarkMode(root.classList.contains("dark"));
-  };
 
   return (
     <>

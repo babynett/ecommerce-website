@@ -3,7 +3,6 @@ import React from "react";
 import { motion } from "motion/react";
 import { Card } from "./ui/card";
 import { PlaceholdersAndVanishInput } from "./ui/placeholders-and-vanish-input";
-import Link from "next/link";
 import { HoverCard, HoverCardTrigger } from "@radix-ui/react-hover-card";
 
 const Footer = () => {

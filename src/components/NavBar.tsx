@@ -49,7 +49,7 @@ const NavBar = () => {
               <NavigationMenuTrigger>About The Shop</NavigationMenuTrigger>
               <NavigationMenuContent>
                 <NavigationMenuLink>Mission & Vision</NavigationMenuLink>
-                <NavigationMenuLink>Who's the owner?</NavigationMenuLink>
+                <NavigationMenuLink>Who&apos;s the owner?</NavigationMenuLink>
               </NavigationMenuContent>
             </NavigationMenuItem>
 
